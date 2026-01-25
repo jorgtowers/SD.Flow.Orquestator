@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj",
         "projectName": "SD.Flow.Orquestator",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

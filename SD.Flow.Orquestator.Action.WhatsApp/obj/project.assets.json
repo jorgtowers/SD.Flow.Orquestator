@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
       "projectName": "SD.Flow.Orquestator.Action.WhatsApp",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.WhatsApp\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Action.WhatsApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,8 +62,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj"
+            "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj"
             }
           }
         }

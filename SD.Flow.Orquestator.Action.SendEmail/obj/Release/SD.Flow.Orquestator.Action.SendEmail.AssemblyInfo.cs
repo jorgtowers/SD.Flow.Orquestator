@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SD.Flow.Orquestator.Action.SendEmail")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3d6b6fc77b0f200b4727478fcd4290bc1535958")]
 [assembly: System.Reflection.AssemblyProductAttribute("SD.Flow.Orquestator.Action.SendEmail")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SD.Flow.Orquestator.Action.SendEmail")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

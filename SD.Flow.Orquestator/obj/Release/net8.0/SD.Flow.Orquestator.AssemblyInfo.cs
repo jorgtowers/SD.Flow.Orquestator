@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SD.Flow.Orquestator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2233c56c349bb9596ac1090cd32f3a974be6e69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3d6b6fc77b0f200b4727478fcd4290bc1535958")]
 [assembly: System.Reflection.AssemblyProductAttribute("SD.Flow.Orquestator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SD.Flow.Orquestator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

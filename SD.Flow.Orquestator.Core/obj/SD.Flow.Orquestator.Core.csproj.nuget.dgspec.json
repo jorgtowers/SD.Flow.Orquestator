@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj",
         "projectName": "SD.Flow.Orquestator.Core",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Core\\SD.Flow.Orquestator.Core.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Core\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
