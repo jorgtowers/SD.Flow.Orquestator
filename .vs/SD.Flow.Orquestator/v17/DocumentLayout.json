@@ -54,8 +54,7 @@
               "RelativeToolTip": "SD.Flow.Orquestator.Action.CopyFiles\\CopyFilesAction.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwBYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T19:15:09.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-25T19:15:09.09Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "SD.Flow.Orquestator\\Examples\\moveFiles.json",
               "ViewState": "AgIAACcAAAAAAAAAAAAYwDsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-25T19:10:05.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-25T19:10:05.156Z"
             },
             {
               "$type": "Document",
@@ -78,7 +76,7 @@
               "RelativeDocumentMoniker": "SD.Flow.Orquestator.Action.MoveFiles\\MoveFilesAction.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Action.MoveFiles\\MoveFilesAction.cs",
               "RelativeToolTip": "SD.Flow.Orquestator.Action.MoveFiles\\MoveFilesAction.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADkAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwDkAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-25T19:04:35.555Z",
               "EditorCaption": ""
@@ -86,15 +84,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SD.Flow.Orquestator.Action.MoveFiles",
+              "Title": "SD.Flow.Orquestator.Action.MoveFiles.csproj",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj",
               "RelativeDocumentMoniker": "SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj",
               "RelativeToolTip": "SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-25T19:04:32.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-25T19:04:32.235Z"
             }
           ]
         },

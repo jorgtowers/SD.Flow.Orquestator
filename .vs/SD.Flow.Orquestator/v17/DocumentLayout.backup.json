@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{9F5D7332-8D61-4879-8A42-97F7F5F070AF}|SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj|solutionrelative:sd.flow.orquestator.action.movefiles\\movefilesaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9289037B-AAC4-48B9-A48E-E20BCA2CE7A3}|SD.Flow.Orquestator.Action.CopyFiles\\SD.Flow.Orquestator.Action.CopyFiles.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\sd.flow.orquestator\\sd.flow.orquestator\\sd.flow.orquestator.action.copyfiles\\copyfilesaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9289037B-AAC4-48B9-A48E-E20BCA2CE7A3}|SD.Flow.Orquestator.Action.CopyFiles\\SD.Flow.Orquestator.Action.CopyFiles.csproj|solutionrelative:sd.flow.orquestator.action.copyfiles\\copyfilesaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8648AC2A-B4B3-4C87-8C83-D0CC01904A4E}|SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\sd.flow.orquestator\\sd.flow.orquestator\\sd.flow.orquestator\\examples\\movefiles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8648AC2A-B4B3-4C87-8C83-D0CC01904A4E}|SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj|solutionrelative:sd.flow.orquestator\\examples\\movefiles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 379,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,6 +47,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CopyFilesAction.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Action.CopyFiles\\CopyFilesAction.cs",
+              "RelativeDocumentMoniker": "SD.Flow.Orquestator.Action.CopyFiles\\CopyFilesAction.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Action.CopyFiles\\CopyFilesAction.cs",
+              "RelativeToolTip": "SD.Flow.Orquestator.Action.CopyFiles\\CopyFilesAction.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T19:15:09.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "moveFiles.json",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\Examples\\moveFiles.json",
               "RelativeDocumentMoniker": "SD.Flow.Orquestator\\Examples\\moveFiles.json",
@@ -61,14 +78,14 @@
               "RelativeDocumentMoniker": "SD.Flow.Orquestator.Action.MoveFiles\\MoveFilesAction.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Action.MoveFiles\\MoveFilesAction.cs",
               "RelativeToolTip": "SD.Flow.Orquestator.Action.MoveFiles\\MoveFilesAction.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAswF4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADkAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-25T19:04:35.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SD.Flow.Orquestator.Action.MoveFiles",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\SD.Flow.Orquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj",
               "RelativeDocumentMoniker": "SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj",
