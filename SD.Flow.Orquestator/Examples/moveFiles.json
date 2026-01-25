@@ -1,11 +1,60 @@
 {
-  "Description": "Mover todos los PDFs de facturas a la carpeta de procesados",
+  "Description": "Mover archivos con criterios extendidos de tiempo y exclusión",
   "ActionName": "MoveFiles",
   "Parameters": {
     "SourceDirectory": "C:/Entrada/Facturas",
     "SearchPattern": "*.xlsx, *.docx, *.txt",
-    "DestinationDirectory": "C:/Almacen/Procesados_2024",
+    "DestinationDirectory": "C:/Almacen/Procesados_2026",
     "ExcludedItems": "Seguro Social, backup.txt, Nominas",
-    "Recursive": "true"
+    "Recursive": "true",
+    "DateFilter": "2026-01-01 TO TODAY",
+    "DateProperty": "Modified",
+    "SimulationMode": "false"
+  }
+}
+
+
+{
+  "Description": "SIMULACIÓN: Previsualizar movimiento de archivos del año 2026",
+  "ActionName": "MoveFiles",
+  "Parameters": {
+    "SourceDirectory": "C:/Entrada/Facturas",
+    "SearchPattern": "*.*",
+    "DestinationDirectory": "C:/Almacen/Procesados_2026",
+    "ExcludedItems": "backup, temp",
+    "Recursive": "true",
+    "DateFilter": "2026-01-01 TO TODAY",
+    "DateProperty": "Modified",
+    "SimulationMode": "true"
+  }
+}
+
+{
+  "Description": "Mover facturas creadas en la primera quincena de enero",
+  "ActionName": "MoveFiles",
+  "Parameters": {
+    "SourceDirectory": "C:/Entrada/Facturas",
+    "SearchPattern": "*.docx, *.pdf",
+    "DestinationDirectory": "C:/Auditoria/Enero_2026",
+    "ExcludedItems": "Borradores, Test",
+    "Recursive": "true",
+    "DateFilter": "2026-01-01 TO 2026-01-15",
+    "DateProperty": "Created",
+    "SimulationMode": "false"
+  }
+}
+
+{
+  "Description": "Archivar documentos antiguos de más de 30 días",
+  "ActionName": "MoveFiles",
+  "Parameters": {
+    "SourceDirectory": "C:/Entrada/Facturas",
+    "SearchPattern": "*.txt, *.xlsx",
+    "DestinationDirectory": "C:/Almacen/Historico_Mensual",
+    "ExcludedItems": "Manuales, Importante.txt",
+    "Recursive": "true",
+    "DateFilter": ">30d",
+    "DateProperty": "Modified",
+    "SimulationMode": "false"
   }
 }

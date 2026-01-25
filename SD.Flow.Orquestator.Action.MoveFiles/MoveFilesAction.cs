@@ -1,61 +1,111 @@
 ﻿using SD.Flow.Orquestator.Core;
+using System.Globalization;
 
 public class MoveFilesAction : IWorkflowAction
 {
+
     public string Name => "MoveFiles";
 
     public async Task ExecuteAsync(Dictionary<string, string> args)
     {
+        // 1. Configuración de parámetros
         string sourceDir = Path.GetFullPath(PathHelper.ResolveDynamicPath(args["SourceDirectory"]));
         string destDir = Path.GetFullPath(PathHelper.ResolveDynamicPath(args["DestinationDirectory"]));
         string searchPattern = args.GetValueOrDefault("SearchPattern", "*.*");
-        var excludedItems = args.GetValueOrDefault("ExcludedItems", "")
-            .Split(',', StringSplitOptions.RemoveEmptyEntries)
-            .Select(x => x.Trim()).ToList();
+        string dateFilter = args.GetValueOrDefault("DateFilter", string.Empty);
+        string dateProperty = args.GetValueOrDefault("DateProperty", "Modified");
 
-        if (!Directory.Exists(sourceDir)) throw new DirectoryNotFoundException($"Origen no encontrado: {sourceDir}");
+        // Parámetro de Simulación: Por seguridad, por defecto es 'false'
+        bool isSimulation = args.GetValueOrDefault("SimulationMode", "false").Equals("true", StringComparison.OrdinalIgnoreCase);
 
-        // 1. Recopilar archivos
-        string[] patterns = searchPattern.Split(',').Select(p => p.Trim()).ToArray();
-        var allFiles = patterns.SelectMany(p =>
-            Directory.GetFiles(sourceDir, p, SearchOption.AllDirectories)).ToList();
+        var excludedItems = args.GetValueOrDefault("ExcludedItems", "").Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
 
-        // 2. Mover archivos manteniendo estructura
+        if (isSimulation) Console.WriteLine("--- MODO SIMULACIÓN ACTIVADO: No se realizarán cambios reales ---");
+
+        if (!Directory.Exists(sourceDir)) throw new DirectoryNotFoundException(sourceDir);
+
+        var patterns = searchPattern.Split(',', StringSplitOptions.TrimEntries);
+        var allFiles = patterns.SelectMany(p => Directory.EnumerateFiles(sourceDir, p, SearchOption.AllDirectories));
+
+        int filesProcessed = 0;
+
         foreach (var filePath in allFiles)
         {
-            string relativePath = Path.GetRelativePath(sourceDir, filePath);
-
-            // Validar exclusión
-            if (excludedItems.Any(ex => relativePath.Split(Path.DirectorySeparatorChar)
-                .Any(part => part.Equals(ex, StringComparison.OrdinalIgnoreCase)))) continue;
-
-            string finalDestPath = Path.Combine(destDir, relativePath);
-            string? finalDestFolder = Path.GetDirectoryName(finalDestPath);
-
-            if (!string.IsNullOrEmpty(finalDestFolder)) Directory.CreateDirectory(finalDestFolder);
-
-            if (File.Exists(finalDestPath)) File.Delete(finalDestPath);
-            File.Move(filePath, finalDestPath);
-        }
-
-        // 3. LIMPIEZA DE CARPETAS VACÍAS
-        // Obtenemos todas las subcarpetas y las ordenamos por longitud (descendente)
-        // para borrar primero las más profundas.
-        var subFolders = Directory.GetDirectories(sourceDir, "*", SearchOption.AllDirectories)
-            .OrderByDescending(d => d.Length);
-
-        foreach (var folder in subFolders)
-        {
-            // Solo borramos si no tiene archivos ni otras subcarpetas
-            if (Directory.Exists(folder) &&
-                !Directory.EnumerateFileSystemEntries(folder).Any())
+            try
             {
-                try { Directory.Delete(folder); }
-                catch { /* Evitar errores si una carpeta está bloqueada */ }
+                var fileInfo = new FileInfo(filePath);
+                DateTime fileDate = dateProperty.Equals("Created", StringComparison.OrdinalIgnoreCase) ? fileInfo.CreationTime : fileInfo.LastWriteTime;
+
+                if (!IsDateMatch(fileDate, dateFilter)) continue;
+
+                string relativePath = Path.GetRelativePath(sourceDir, filePath);
+                if (excludedItems.Any(ex => relativePath.Contains(ex, StringComparison.OrdinalIgnoreCase))) continue;
+
+                string finalDestPath = Path.Combine(destDir, relativePath);
+
+                if (isSimulation)
+                {
+                    Console.WriteLine("[SIMULACIÓN] Movería: {From} -> {To}", relativePath, finalDestPath);
+                }
+                else
+                {
+                    Directory.CreateDirectory(Path.GetDirectoryName(finalDestPath)!);
+                    if (File.Exists(finalDestPath)) File.Delete(finalDestPath);
+                    File.Move(filePath, finalDestPath);
+                }
+                filesProcessed++;
             }
+            catch (Exception ex) { Console.WriteLine($"Error en {ex.Message}"); }
         }
 
-        Console.WriteLine("[MoveFiles] Movimiento y limpieza completados.");
+        if (!isSimulation)
+        {
+            CleanEmptyDirectories(sourceDir);
+            Console.WriteLine("[MoveFiles] Se movieron {Count} archivos correctamente.", filesProcessed);
+        }
+        else
+        {
+            Console.WriteLine("[SIMULACIÓN] Se habrían movido {Count} archivos y se habría limpiado el origen.", filesProcessed);
+        }
+
         await Task.CompletedTask;
+    }
+
+    private bool IsDateMatch(DateTime fileDate, string filter)
+    {
+        if (string.IsNullOrWhiteSpace(filter)) return true;
+
+        if (filter.Contains(" TO ", StringComparison.OrdinalIgnoreCase))
+        {
+            var parts = filter.Split(" TO ", StringSplitOptions.TrimEntries);
+            return fileDate >= ParseDate(parts[0]) && fileDate <= ParseDate(parts[1]);
+        }
+
+        if (filter.StartsWith(">"))
+        {
+            string val = filter[1..].Trim();
+            if (val.EndsWith("h")) return fileDate <= DateTime.Now.AddHours(-double.Parse(val.Replace("h", "")));
+            if (val.EndsWith("d")) return fileDate <= DateTime.Now.AddDays(-double.Parse(val.Replace("d", "")));
+            return fileDate >= ParseDate(val);
+        }
+
+        return true;
+    }
+
+    private DateTime ParseDate(string dateStr)
+    {
+        if (dateStr.Equals("TODAY", StringComparison.OrdinalIgnoreCase)) return DateTime.Today.AddDays(1).AddTicks(-1); // Fin del día de hoy
+        if (dateStr.Equals("NOW", StringComparison.OrdinalIgnoreCase)) return DateTime.Now;
+        return DateTime.ParseExact(dateStr, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+    }
+
+    private void CleanEmptyDirectories(string root)
+    {
+        var folders = Directory.GetDirectories(root, "*", SearchOption.AllDirectories).OrderByDescending(d => d.Length);
+        foreach (var folder in folders)
+        {
+            try { if (!Directory.EnumerateFileSystemEntries(folder).Any()) Directory.Delete(folder); }
+            catch { }
+        }
     }
 }
