@@ -1,0 +1,13 @@
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.CopyFile\obj\Debug\net8.0\SD.Flow.Orquestator.Action.CopyFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.CopyFile\obj\Debug\net8.0\SD.Flow.Orquestator.Action.CopyFile.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.CopyFile\obj\Debug\net8.0\SD.Flow.Orquestator.Action.CopyFile.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.CopyFile\obj\Debug\net8.0\SD.Flow.Orquestator.Action.CopyFile.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\Debug\net8.0\SD.Flow.Orquestator.Action.CopyFile.deps.json
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\Debug\net8.0\SD.Flow.Orquestator.Action.CopyFile.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\Debug\net8.0\SD.Flow.Orquestator.Action.CopyFile.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.CopyFile\obj\Debug\net8.0\SD.Flow.Orquestator.Action.CopyFile.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.CopyFile\obj\Debug\net8.0\SD.Flow..2C2AFD85.Up2Date
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.CopyFile\obj\Debug\net8.0\SD.Flow.Orquestator.Action.CopyFile.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.CopyFile\obj\Debug\net8.0\refint\SD.Flow.Orquestator.Action.CopyFile.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.CopyFile\obj\Debug\net8.0\SD.Flow.Orquestator.Action.CopyFile.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.CopyFile\obj\Debug\net8.0\ref\SD.Flow.Orquestator.Action.CopyFile.dll

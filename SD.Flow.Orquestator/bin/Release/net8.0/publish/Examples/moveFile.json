@@ -1,0 +1,8 @@
+{
+  "Description": "Mover log a carpeta de archivado",
+  "ActionName": "MoveFile",
+  "Parameters": {
+    "Source": "temp_report.txt",
+    "Destination": "archivados/reporte_finalizado.txt"
+  }
+}

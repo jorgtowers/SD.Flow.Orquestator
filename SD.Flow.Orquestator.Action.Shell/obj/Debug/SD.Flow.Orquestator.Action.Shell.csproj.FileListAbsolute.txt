@@ -1,0 +1,14 @@
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.Shell.deps.json
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.Shell.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.Shell.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow..0632E8B5.Up2Date
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\refint\SD.Flow.Orquestator.Action.Shell.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\ref\SD.Flow.Orquestator.Action.Shell.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.sourcelink.json

@@ -1,0 +1,10 @@
+{
+  "Description": "Enviar reporte por correo",
+  "ActionName": "SendEmail",
+  "Parameters": {
+    "To": "jorgtowers@gmail.com",
+    "Subject": "Reporte Diario",
+    "Body": "Hola, adjunto envío el reporte generado automáticamente.",
+    "AttachmentPath": "input/file.txt"
+  }
+}

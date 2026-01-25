@@ -1,0 +1,12 @@
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\FlowOrquestator.exe
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\Input\file.txt
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\Input\workflow.json
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\FlowOrquestator.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\FlowOrquestator.deps.json
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\FlowOrquestator.runtimeconfig.json
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\FlowOrquestator.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\BouncyCastle.Cryptography.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\MailKit.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\MimeKit.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\System.Security.Cryptography.Pkcs.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\FlowOrquestator\bin\Release\net8.0\publish\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

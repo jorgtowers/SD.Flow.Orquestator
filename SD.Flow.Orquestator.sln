@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.CopyFile", "SD.Flow.Orquestator.Action.CopyFile\SD.Flow.Orquestator.Action.CopyFile.csproj", "{4834C1B0-8D0F-4044-A841-721FCCB6F16D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Core", "SD.Flow.Orquestator.Core\SD.Flow.Orquestator.Core.csproj", "{62B9F5F9-F98E-4666-A9C5-00E044936EF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.SendEmail", "SD.Flow.Orquestator.Action.SendEmail\SD.Flow.Orquestator.Action.SendEmail.csproj", "{D481D48D-A315-4D01-870C-1371690E8290}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.CopyFiles", "SD.Flow.Orquestator.Action.CopyFiles\SD.Flow.Orquestator.Action.CopyFiles.csproj", "{9289037B-AAC4-48B9-A48E-E20BCA2CE7A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.DeleteFiles", "SD.Flow.Orquestator.Action.DeleteFiles\SD.Flow.Orquestator.Action.DeleteFiles.csproj", "{206936FA-4F12-4C4B-AE4B-9A9EF604B543}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.MoveFille", "SD.Flow.Orquestator.Action.MoveFille\SD.Flow.Orquestator.Action.MoveFille.csproj", "{7BAD2694-693F-4C89-8D22-851F8BAFE2E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.MoveFiles", "SD.Flow.Orquestator.Action.MoveFiles\SD.Flow.Orquestator.Action.MoveFiles.csproj", "{9F5D7332-8D61-4879-8A42-97F7F5F070AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.ZipFiles", "SD.Flow.Orquestator.Action.ZipFiles\SD.Flow.Orquestator.Action.ZipFiles.csproj", "{D9185551-1A58-4D4F-82A2-9C36BDDDFB7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.Shell", "SD.Flow.Orquestator.Action.Shell\SD.Flow.Orquestator.Action.Shell.csproj", "{691B5A06-A80D-4B2D-ACBA-26CCD0535BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.WhatsApp", "SD.Flow.Orquestator.Action.WhatsApp\SD.Flow.Orquestator.Action.WhatsApp.csproj", "{C5545C8B-9CE6-400C-9D65-80D5D3BBAD1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator", "SD.Flow.Orquestator\SD.Flow.Orquestator.csproj", "{8648AC2A-B4B3-4C87-8C83-D0CC01904A4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4834C1B0-8D0F-4044-A841-721FCCB6F16D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4834C1B0-8D0F-4044-A841-721FCCB6F16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4834C1B0-8D0F-4044-A841-721FCCB6F16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4834C1B0-8D0F-4044-A841-721FCCB6F16D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62B9F5F9-F98E-4666-A9C5-00E044936EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62B9F5F9-F98E-4666-A9C5-00E044936EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62B9F5F9-F98E-4666-A9C5-00E044936EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62B9F5F9-F98E-4666-A9C5-00E044936EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D481D48D-A315-4D01-870C-1371690E8290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D481D48D-A315-4D01-870C-1371690E8290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D481D48D-A315-4D01-870C-1371690E8290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D481D48D-A315-4D01-870C-1371690E8290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9289037B-AAC4-48B9-A48E-E20BCA2CE7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9289037B-AAC4-48B9-A48E-E20BCA2CE7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9289037B-AAC4-48B9-A48E-E20BCA2CE7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9289037B-AAC4-48B9-A48E-E20BCA2CE7A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206936FA-4F12-4C4B-AE4B-9A9EF604B543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206936FA-4F12-4C4B-AE4B-9A9EF604B543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206936FA-4F12-4C4B-AE4B-9A9EF604B543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206936FA-4F12-4C4B-AE4B-9A9EF604B543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BAD2694-693F-4C89-8D22-851F8BAFE2E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BAD2694-693F-4C89-8D22-851F8BAFE2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BAD2694-693F-4C89-8D22-851F8BAFE2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BAD2694-693F-4C89-8D22-851F8BAFE2E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F5D7332-8D61-4879-8A42-97F7F5F070AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F5D7332-8D61-4879-8A42-97F7F5F070AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F5D7332-8D61-4879-8A42-97F7F5F070AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F5D7332-8D61-4879-8A42-97F7F5F070AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9185551-1A58-4D4F-82A2-9C36BDDDFB7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9185551-1A58-4D4F-82A2-9C36BDDDFB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9185551-1A58-4D4F-82A2-9C36BDDDFB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9185551-1A58-4D4F-82A2-9C36BDDDFB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{691B5A06-A80D-4B2D-ACBA-26CCD0535BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{691B5A06-A80D-4B2D-ACBA-26CCD0535BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{691B5A06-A80D-4B2D-ACBA-26CCD0535BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{691B5A06-A80D-4B2D-ACBA-26CCD0535BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5545C8B-9CE6-400C-9D65-80D5D3BBAD1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5545C8B-9CE6-400C-9D65-80D5D3BBAD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5545C8B-9CE6-400C-9D65-80D5D3BBAD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5545C8B-9CE6-400C-9D65-80D5D3BBAD1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8648AC2A-B4B3-4C87-8C83-D0CC01904A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8648AC2A-B4B3-4C87-8C83-D0CC01904A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8648AC2A-B4B3-4C87-8C83-D0CC01904A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8648AC2A-B4B3-4C87-8C83-D0CC01904A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

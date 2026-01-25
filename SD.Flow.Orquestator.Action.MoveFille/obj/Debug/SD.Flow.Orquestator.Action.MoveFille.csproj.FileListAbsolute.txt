@@ -1,0 +1,14 @@
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.MoveFille.deps.json
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.MoveFille.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.MoveFille.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFille\obj\Debug\SD.Flow.Orquestator.Action.MoveFille.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFille\obj\Debug\SD.Flow.Orquestator.Action.MoveFille.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFille\obj\Debug\SD.Flow.Orquestator.Action.MoveFille.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFille\obj\Debug\SD.Flow.Orquestator.Action.MoveFille.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFille\obj\Debug\SD.Flow.Orquestator.Action.MoveFille.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFille\obj\Debug\SD.Flow..E38B2BCD.Up2Date
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFille\obj\Debug\SD.Flow.Orquestator.Action.MoveFille.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFille\obj\Debug\refint\SD.Flow.Orquestator.Action.MoveFille.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFille\obj\Debug\SD.Flow.Orquestator.Action.MoveFille.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFille\obj\Debug\ref\SD.Flow.Orquestator.Action.MoveFille.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFille\obj\Debug\SD.Flow.Orquestator.Action.MoveFille.sourcelink.json

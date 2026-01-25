@@ -1,0 +1,8 @@
+{
+  "Description": "Copiar logs a carpeta de backup",
+  "ActionName": "CopyFile",
+  "Parameters": {
+    "Source": "app.log",
+    "Destination": "backups/app_backup.log"
+  }
+}

@@ -1,0 +1,19 @@
+//Searching files
+{
+  "Description": "Eliminar archivos temporales de log",
+  "ActionName": "DeleteFiles",
+  "Parameters": {
+    "Path": "C:/App/Temp",
+    "SearchPattern": "*.tmp",
+    "Recursive": "false"
+  }
+}
+
+//Direct Files
+{
+  "Description": "Eliminar el reporte viejo",
+  "ActionName": "DeleteFiles",
+  "Parameters": {
+    "Path": "C:/App/Old_Report.pdf"
+  }
+}

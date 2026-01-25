@@ -1,0 +1,529 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\sd.flow.orquestator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:sd.flow.orquestator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\input\\workflow.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:input\\workflow.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\scripts\\send_ws.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:scripts\\send_ws.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5545C8B-9CE6-400C-9D65-80D5D3BBAD1A}|..\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator.action.whatsapp\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5545C8B-9CE6-400C-9D65-80D5D3BBAD1A}|..\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator.action.whatsapp\\whatsappaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5545C8B-9CE6-400C-9D65-80D5D3BBAD1A}|..\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator.action.whatsapp\\sd.flow.orquestator.action.whatsapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\examples\\whatsapp.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:examples\\whatsapp.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\loadactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:loadactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\examples\\zipfiles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:examples\\zipfiles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\examples\\sendemail.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:examples\\sendemail.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\examples\\movefiles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:examples\\movefiles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\examples\\movefile.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:examples\\movefile.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\examples\\deletefiles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:examples\\deletefiles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\examples\\copyfiles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:examples\\copyfiles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\examples\\copyfile.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:examples\\copyfile.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5D7332-8D61-4879-8A42-97F7F5F070AF}|..\\SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator.action.movefiles\\sd.flow.orquestator.action.movefiles.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5D7332-8D61-4879-8A42-97F7F5F070AF}|..\\SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator.action.movefiles\\movefilesaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5545C8B-9CE6-400C-9D65-80D5D3BBAD1A}|..\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator.action.whatsapp\\sd.flow.orquestator.action.whatsapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4834C1B0-8D0F-4044-A841-721FCCB6F16D}|..\\SD.Flow.Orquestator.Action.CopyFile\\SD.Flow.Orquestator.Action.CopyFile.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator.action.copyfile\\copyfileaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D481D48D-A315-4D01-870C-1371690E8290}|..\\SD.Flow.Orquestator.Action.SendEmail\\SD.Flow.Orquestator.Action.SendEmail.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator.action.sendemail\\sd.flow.orquestator.action.sendemail.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|c:\\users\\usuario\\desktop\\vscode\\solutiondeveloper_projects\\floworquestator\\sd.flow.orquestator\\input\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0BB494FE-4E4C-42DF-A561-5337690E7B4E}|SD.Flow.Orquestator.csproj|solutionrelative:input\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 379,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cf577b8c-4134-11d2-83e5-00c04f9902c1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "whatsApp.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\whatsApp.json",
+              "RelativeDocumentMoniker": "Examples\\whatsApp.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\whatsApp.json",
+              "RelativeToolTip": "Examples\\whatsApp.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-25T14:28:15.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WhatsAppAction.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.WhatsApp\\WhatsAppAction.cs",
+              "RelativeDocumentMoniker": "..\\SD.Flow.Orquestator.Action.WhatsApp\\WhatsAppAction.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.WhatsApp\\WhatsAppAction.cs",
+              "RelativeToolTip": "..\\SD.Flow.Orquestator.Action.WhatsApp\\WhatsAppAction.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T14:25:44.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T17:14:13.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoadActions.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\LoadActions.cs",
+              "RelativeDocumentMoniker": "LoadActions.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\LoadActions.cs",
+              "RelativeToolTip": "LoadActions.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T14:39:54.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "workflow.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Input\\workflow.json",
+              "RelativeDocumentMoniker": "Input\\workflow.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Input\\workflow.json",
+              "RelativeToolTip": "Input\\workflow.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-24T17:24:29.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "send_ws.py",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Scripts\\send_ws.py",
+              "RelativeDocumentMoniker": "Scripts\\send_ws.py",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Scripts\\send_ws.py",
+              "RelativeToolTip": "Scripts\\send_ws.py",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-01-25T14:30:24.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SD.Flow.Orquestator.csproj",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj",
+              "RelativeDocumentMoniker": "SD.Flow.Orquestator.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\SD.Flow.Orquestator.csproj",
+              "RelativeToolTip": "SD.Flow.Orquestator.csproj",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-25T14:49:50.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "readme.md",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.WhatsApp\\readme.md",
+              "RelativeDocumentMoniker": "..\\SD.Flow.Orquestator.Action.WhatsApp\\readme.md",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.WhatsApp\\readme.md",
+              "RelativeToolTip": "..\\SD.Flow.Orquestator.Action.WhatsApp\\readme.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-01-25T15:00:53.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SD.Flow.Orquestator.Action.WhatsApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
+              "RelativeDocumentMoniker": "..\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
+              "RelativeToolTip": "..\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-25T14:41:28.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "zipFiles.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\zipFiles.json",
+              "RelativeDocumentMoniker": "Examples\\zipFiles.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\zipFiles.json",
+              "RelativeToolTip": "Examples\\zipFiles.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-25T14:38:22.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "sendEmail.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\sendEmail.json",
+              "RelativeDocumentMoniker": "Examples\\sendEmail.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\sendEmail.json",
+              "RelativeToolTip": "Examples\\sendEmail.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-24T18:18:34.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "moveFiles.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\moveFiles.json",
+              "RelativeDocumentMoniker": "Examples\\moveFiles.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\moveFiles.json",
+              "RelativeToolTip": "Examples\\moveFiles.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-24T18:17:27.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "moveFile.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\moveFile.json",
+              "RelativeDocumentMoniker": "Examples\\moveFile.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\moveFile.json",
+              "RelativeToolTip": "Examples\\moveFile.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-24T18:16:55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "deleteFiles.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\deleteFiles.json",
+              "RelativeDocumentMoniker": "Examples\\deleteFiles.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\deleteFiles.json",
+              "RelativeToolTip": "Examples\\deleteFiles.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-24T18:22:38.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "copyFiles.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\copyFiles.json",
+              "RelativeDocumentMoniker": "Examples\\copyFiles.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\copyFiles.json",
+              "RelativeToolTip": "Examples\\copyFiles.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-24T18:20:44.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "copyFile.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\copyFile.json",
+              "RelativeDocumentMoniker": "Examples\\copyFile.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Examples\\copyFile.json",
+              "RelativeToolTip": "Examples\\copyFile.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-24T18:17:57.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SD.Flow.Orquestator.Action.SendEmail.csproj",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.SendEmail\\SD.Flow.Orquestator.Action.SendEmail.csproj",
+              "RelativeDocumentMoniker": "..\\SD.Flow.Orquestator.Action.SendEmail\\SD.Flow.Orquestator.Action.SendEmail.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.SendEmail\\SD.Flow.Orquestator.Action.SendEmail.csproj",
+              "RelativeToolTip": "..\\SD.Flow.Orquestator.Action.SendEmail\\SD.Flow.Orquestator.Action.SendEmail.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-25T02:18:55.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MoveFilesAction.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.MoveFiles\\MoveFilesAction.cs",
+              "RelativeDocumentMoniker": "..\\SD.Flow.Orquestator.Action.MoveFiles\\MoveFilesAction.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.MoveFiles\\MoveFilesAction.cs",
+              "RelativeToolTip": "..\\SD.Flow.Orquestator.Action.MoveFiles\\MoveFilesAction.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T13:46:21.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SD.Flow.Orquestator.Action.WhatsApp",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
+              "RelativeDocumentMoniker": "..\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
+              "RelativeToolTip": "..\\SD.Flow.Orquestator.Action.WhatsApp\\SD.Flow.Orquestator.Action.WhatsApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-25T14:26:29.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SD.Flow.Orquestator.Action.MoveFiles.csproj",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj",
+              "RelativeDocumentMoniker": "..\\SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj",
+              "RelativeToolTip": "..\\SD.Flow.Orquestator.Action.MoveFiles\\SD.Flow.Orquestator.Action.MoveFiles.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-25T02:18:35.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CopyFileAction.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.CopyFile\\CopyFileAction.cs",
+              "RelativeDocumentMoniker": "..\\SD.Flow.Orquestator.Action.CopyFile\\CopyFileAction.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator.Action.CopyFile\\CopyFileAction.cs",
+              "RelativeToolTip": "..\\SD.Flow.Orquestator.Action.CopyFile\\CopyFileAction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T23:10:46.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "file.txt",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Input\\file.txt",
+              "RelativeDocumentMoniker": "Input\\file.txt",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\VSCODE\\SolutionDeveloper_Projects\\FlowOrquestator\\SD.Flow.Orquestator\\Input\\file.txt",
+              "RelativeToolTip": "Input\\file.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-24T18:12:32.528Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 443,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{86eaa8c6-b236-43c6-b0cb-4025953746f8}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{587910af-a90a-3787-8b7a-65e34824fa7c}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{174bbdbc-a66d-385e-ab90-f40c77c8bc99}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 239,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

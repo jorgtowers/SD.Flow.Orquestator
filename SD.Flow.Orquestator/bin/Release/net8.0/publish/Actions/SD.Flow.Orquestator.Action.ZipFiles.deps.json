@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SD.Flow.Orquestator.Action.ZipFiles/1.0.0": {
+        "dependencies": {
+          "SD.Flow.Orquestator.Core": "1.0.0"
+        },
+        "runtime": {
+          "SD.Flow.Orquestator.Action.ZipFiles.dll": {}
+        }
+      },
+      "SD.Flow.Orquestator.Core/1.0.0": {
+        "runtime": {
+          "SD.Flow.Orquestator.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SD.Flow.Orquestator.Action.ZipFiles/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SD.Flow.Orquestator.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

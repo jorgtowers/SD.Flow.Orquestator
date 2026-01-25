@@ -1,0 +1,11 @@
+{
+  "Description": "Mover todos los PDFs de facturas a la carpeta de procesados",
+  "ActionName": "MoveFiles",
+  "Parameters": {
+    "SourceDirectory": "C:/Entrada/Facturas",
+    "SearchPattern": "*.xlsx, *.docx, *.txt",
+    "DestinationDirectory": "C:/Almacen/Procesados_2024",
+    "ExcludedItems": "Seguro Social, backup.txt, Nominas",
+    "Recursive": "true"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "Description": "Comprimir todos los reportes PDF",
+  "ActionName": "ZipFiles",
+  "Parameters": {
+    "SourceDirectory": "C:/App/Reportes",
+    "SearchPattern": "*.pdf",
+    "ZipFilePath": "C:/App/Temp/Reportes_Finales.zip"
+  }
+}

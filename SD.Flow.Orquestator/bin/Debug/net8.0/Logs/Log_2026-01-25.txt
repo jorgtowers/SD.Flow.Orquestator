@@ -1,0 +1,123 @@
+[09:40:57] [System] !============== 2026-25-01-09:40 =================!
+[09:40:57] [System] Leyendo configuración del flujo...
+[09:40:58] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[09:40:58] [System] Ejecutando paso: Limpiar DNS y Logs de Windows
+[09:40:59] [System] Ejecutando paso: Ejecutar script externo de Python o Batch
+[09:41:00] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[09:41:00] [System] Presiona cualquier tecla para salir...
+[09:42:23] [System] !============== 2026-25-01-09:42 =================!
+[09:42:23] [System] Leyendo configuración del flujo...
+[09:42:23] [System] Error de formato en el JSON: The JSON value could not be converted to System.String. Path: $.Steps[0].Parameters.Wait | LineNumber: 9 | BytePositionInLine: 20.
+[09:42:23] [System] Presiona cualquier tecla para salir...
+[09:43:22] [System] !============== 2026-25-01-09:43 =================!
+[09:43:22] [System] Leyendo configuración del flujo...
+[09:43:23] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[09:43:23] [System] Ejecutando paso: Limpiar DNS y Logs de Windows
+[09:43:23] [System] Ejecutando paso: Ejecutar script externo de Python o Batch
+[09:43:24] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[09:43:24] [System] Presiona cualquier tecla para salir...
+[10:37:33] [System] !============== 2026-25-01-10:37 =================!
+[10:37:33] [System] Leyendo configuración del flujo...
+[10:37:34] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[10:37:34] [System] Error crítico durante la ejecución: Value cannot be null. (Parameter 'key')
+[10:37:34] [System] Presiona cualquier tecla para salir...
+[10:41:52] [System] !============== 2026-25-01-10:41 =================!
+[10:41:52] [System] Leyendo configuración del flujo...
+[10:41:52] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[10:41:52] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:41:52] [Proceso de Respaldo y Notificación] ERROR: Falló el paso 'Notificacion via Whatsapp' | Exception: No se encontró el script de Python en: C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\bin\Debug\net8.0\Scripts\send_ws.py
+[10:41:52] [System] Abortando workflow debido a un error crítico.
+[10:41:52] [System] Presiona cualquier tecla para salir...
+[10:45:26] [System] !============== 2026-25-01-10:45 =================!
+[10:45:26] [System] Leyendo configuración del flujo...
+[10:45:26] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[10:45:26] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:45:26] [Proceso de Respaldo y Notificación] ERROR: Falló el paso 'Notificacion via Whatsapp' | Exception: No se encontró el script de Python en: C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\bin\Debug\net8.0\Scripts\send_ws.py
+[10:45:26] [System] Abortando workflow debido a un error crítico.
+[10:45:26] [System] Presiona cualquier tecla para salir...
+[10:46:50] [System] !============== 2026-25-01-10:46 =================!
+[10:46:50] [System] Leyendo configuración del flujo...
+[10:46:50] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[10:46:50] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:48:44] [System] !============== 2026-25-01-10:48 =================!
+[10:48:44] [System] Leyendo configuración del flujo...
+[10:48:44] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[10:48:44] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:48:44] [Proceso de Respaldo y Notificación] ERROR: Falló el paso 'Notificacion via Whatsapp' | Exception: No se encontró el script de Python en: C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Scripts\send_ws.py
+[10:48:44] [System] Abortando workflow debido a un error crítico.
+[10:48:44] [System] Presiona cualquier tecla para salir...
+[10:51:11] [System] !============== 2026-25-01-10:51 =================!
+[10:51:11] [System] Leyendo configuración del flujo...
+[10:51:11] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[10:51:11] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:51:11] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[10:51:11] [System] Presiona cualquier tecla para salir...
+[10:52:20] [System] !============== 2026-25-01-10:52 =================!
+[10:52:20] [System] Leyendo configuración del flujo...
+[10:52:20] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[10:52:20] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:52:20] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[10:52:20] [System] Presiona cualquier tecla para salir...
+[10:53:10] [System] !============== 2026-25-01-10:53 =================!
+[10:53:10] [System] Leyendo configuración del flujo...
+[10:53:11] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[10:53:11] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:53:11] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:53:11] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[10:53:11] [System] Presiona cualquier tecla para salir...
+[10:55:54] [System] !============== 2026-25-01-10:55 =================!
+[10:55:54] [System] Leyendo configuración del flujo...
+[10:55:55] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[10:55:55] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:55:55] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:55:55] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[10:55:55] [System] Presiona cualquier tecla para salir...
+[10:57:56] [System] !============== 2026-25-01-10:57 =================!
+[10:57:56] [System] Leyendo configuración del flujo...
+[10:57:56] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[10:57:56] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:57:56] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:57:56] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[10:57:56] [System] Presiona cualquier tecla para salir...
+[10:58:38] [System] !============== 2026-25-01-10:58 =================!
+[10:58:38] [System] Leyendo configuración del flujo...
+[10:58:38] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[10:58:38] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:58:38] [System] Ejecutando paso: Notificacion via Whatsapp
+[10:58:38] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[10:58:38] [System] Presiona cualquier tecla para salir...
+[11:07:44] [System] !============== 2026-25-01-11:07 =================!
+[11:07:44] [System] Leyendo configuración del flujo...
+[11:07:45] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[11:07:45] [System] Ejecutando paso: Notificacion via Whatsapp
+[11:07:45] [System] Ejecutando paso: Notificacion via Whatsapp
+[11:07:45] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[11:07:45] [System] Presiona cualquier tecla para salir...
+[11:08:32] [System] !============== 2026-25-01-11:08 =================!
+[11:08:32] [System] Leyendo configuración del flujo...
+[11:08:32] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[11:08:32] [System] Ejecutando paso: Notificacion via Whatsapp
+[11:08:32] [System] Ejecutando paso: Notificacion via Whatsapp
+[11:08:32] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[11:08:32] [System] Presiona cualquier tecla para salir...
+[11:09:21] [System] !============== 2026-25-01-11:09 =================!
+[11:09:21] [System] Leyendo configuración del flujo...
+[11:09:22] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[11:09:22] [System] Ejecutando paso: Notificacion via Whatsapp
+[11:09:22] [System] Ejecutando paso: Notificacion via Whatsapp
+[11:09:22] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[11:09:22] [System] Presiona cualquier tecla para salir...
+[11:11:32] [System] !============== 2026-25-01-11:11 =================!
+[11:11:32] [System] Leyendo configuración del flujo...
+[11:11:32] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[11:11:32] [System] Ejecutando paso: Notificacion via Whatsapp
+[11:11:32] [System] Ejecutando paso: Notificacion via Whatsapp
+[11:11:32] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[11:11:32] [System] Presiona cualquier tecla para salir...
+[11:13:50] [System] !============== 2026-25-01-11:13 =================!
+[11:13:50] [System] Leyendo configuración del flujo...
+[11:13:50] [System] === Iniciando: Proceso de Respaldo y Notificación ===
+[11:13:50] [System] Ejecutando paso: Notificacion via Whatsapp
+[11:13:50] [System] Ejecutando paso: Notificacion via Whatsapp
+[11:13:50] [System] === Finalizado: Proceso de Respaldo y Notificación ===
+[11:13:50] [System] Presiona cualquier tecla para salir...

@@ -1,0 +1,13 @@
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.SendEmail\obj\Debug\net8.0\SD.Flow.Orquestator.Action.SendEmail.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.SendEmail\obj\Debug\net8.0\SD.Flow.Orquestator.Action.SendEmail.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.SendEmail\obj\Debug\net8.0\SD.Flow.Orquestator.Action.SendEmail.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.SendEmail\obj\Debug\net8.0\SD.Flow.Orquestator.Action.SendEmail.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.SendEmail\obj\Debug\net8.0\SD.Flow.Orquestator.Action.SendEmail.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\Debug\net8.0\SD.Flow.Orquestator.Action.SendEmail.deps.json
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\Debug\net8.0\SD.Flow.Orquestator.Action.SendEmail.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\Debug\net8.0\SD.Flow.Orquestator.Action.SendEmail.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.SendEmail\obj\Debug\net8.0\SD.Flow..D2364E20.Up2Date
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.SendEmail\obj\Debug\net8.0\SD.Flow.Orquestator.Action.SendEmail.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.SendEmail\obj\Debug\net8.0\refint\SD.Flow.Orquestator.Action.SendEmail.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.SendEmail\obj\Debug\net8.0\SD.Flow.Orquestator.Action.SendEmail.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.SendEmail\obj\Debug\net8.0\ref\SD.Flow.Orquestator.Action.SendEmail.dll

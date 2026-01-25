@@ -1,0 +1,10 @@
+{
+  "Description": "Respaldar hojas de cálculo",
+  "ActionName": "CopyFiles",
+  "Parameters": {
+    "SourceDirectory": "C:/Nominas/Pendientes",
+    "SearchPattern": "*.xlsx",
+    "DestinationDirectory": "D:/Backups/Nominas_Mensuales",
+    "Overwrite": "true"
+  }
+}

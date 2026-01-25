@@ -1,0 +1,13 @@
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.DeleteFiles\obj\Debug\net8.0\SD.Flow.Orquestator.Action.DeleteFiles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.DeleteFiles\obj\Debug\net8.0\SD.Flow.Orquestator.Action.DeleteFiles.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.DeleteFiles\obj\Debug\net8.0\SD.Flow.Orquestator.Action.DeleteFiles.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.DeleteFiles\obj\Debug\net8.0\SD.Flow.Orquestator.Action.DeleteFiles.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\Debug\net8.0\SD.Flow.Orquestator.Action.DeleteFiles.deps.json
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\Debug\net8.0\SD.Flow.Orquestator.Action.DeleteFiles.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions\Debug\net8.0\SD.Flow.Orquestator.Action.DeleteFiles.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.DeleteFiles\obj\Debug\net8.0\SD.Flow.Orquestator.Action.DeleteFiles.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.DeleteFiles\obj\Debug\net8.0\SD.Flow..EA3103E4.Up2Date
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.DeleteFiles\obj\Debug\net8.0\SD.Flow.Orquestator.Action.DeleteFiles.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.DeleteFiles\obj\Debug\net8.0\refint\SD.Flow.Orquestator.Action.DeleteFiles.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.DeleteFiles\obj\Debug\net8.0\SD.Flow.Orquestator.Action.DeleteFiles.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.DeleteFiles\obj\Debug\net8.0\ref\SD.Flow.Orquestator.Action.DeleteFiles.dll

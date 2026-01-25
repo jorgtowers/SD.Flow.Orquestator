@@ -1,0 +1,11 @@
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Core\obj\Release\net8.0\SD.Flow.Orquestator.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Core\obj\Release\net8.0\SD.Flow.Orquestator.Core.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Core\obj\Release\net8.0\SD.Flow.Orquestator.Core.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Core\obj\Release\net8.0\SD.Flow.Orquestator.Core.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Core\bin\Release\net8.0\SD.Flow.Orquestator.Core.deps.json
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Core\bin\Release\net8.0\SD.Flow.Orquestator.Core.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Core\bin\Release\net8.0\SD.Flow.Orquestator.Core.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Core\obj\Release\net8.0\SD.Flow.Orquestator.Core.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Core\obj\Release\net8.0\refint\SD.Flow.Orquestator.Core.dll
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Core\obj\Release\net8.0\SD.Flow.Orquestator.Core.pdb
+C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Core\obj\Release\net8.0\ref\SD.Flow.Orquestator.Core.dll

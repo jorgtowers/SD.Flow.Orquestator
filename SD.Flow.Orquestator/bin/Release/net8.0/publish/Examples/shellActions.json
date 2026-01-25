@@ -1,0 +1,23 @@
+// para PowerShell
+{
+  "Description": "Limpiar DNS y Logs de Windows",
+  "ActionName": "ExecuteShell",
+  "Parameters": {
+    "ShellType": "POWERSHELL",
+    "Command": "C:\\Scripts\\MiProceso.ps1",
+    "Wait": "true",
+    "WorkingDirectory": "C:\\Fuentes"
+  }
+}
+
+// para CMD
+{
+  "Description": "Ejecutar script externo de Python o Batch",
+  "ActionName": "ExecuteShell",
+  "Parameters": {
+    "ShellType": "CMD",
+    "Command": "mi_script_procesamiento.bat",
+    "WorkingDirectory": "C:/Scripts/",
+    "Wait": "true"
+  }
+}

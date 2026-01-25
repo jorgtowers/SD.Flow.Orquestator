@@ -1,0 +1,21 @@
+{
+  "WorkflowName": "Proceso de Respaldo y Notificación",
+  "Steps": [
+    {
+      "Description": "Notificacion via Whatsapp",
+      "ActionName": "WhatsApp",
+      "Parameters": {
+        "Phone": "+584244361123",
+        "Message": "✅ ¡Hola! Los archivos han sido procesados y movidos con éxito por el Orquestador."
+      }
+    },
+    {
+      "Description": "Notificacion via Whatsapp",
+      "ActionName": "WhatsApp",
+      "Parameters": {
+        "Phone": "+584124888156",
+        "Message": "✅ ¡Hola! Los archivos han sido procesados y movidos con éxito por el Orquestador."
+      }
+    }
+  ]
+}
