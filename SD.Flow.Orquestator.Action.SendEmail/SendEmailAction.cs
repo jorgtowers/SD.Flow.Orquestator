@@ -3,13 +3,15 @@ using MimeKit;
 using SD.Flow.Orquestator.Core;
 using SmtpClient = MailKit.Net.Smtp.SmtpClient;
 
-namespace FlowOrquestator.Actions
-{
-    public class SendEmailAction : IWorkflowAction
-    {
-        public string Name => "SendEmail";
+namespace SD.Flow.Orquestator.Actions;
 
-        public async Task ExecuteAsync(Dictionary<string, string> args)
+public class SendEmailAction : IWorkflowAction
+{
+    public string Name => "SendEmail";
+
+    public IReadOnlyCollection<string> RequiredParameterKeys => new[] { "To", "Subject" };
+
+    public async Task ExecuteAsync(Dictionary<string, string> args)
         {
 
             string to = args["To"];
@@ -90,5 +92,4 @@ namespace FlowOrquestator.Actions
                 }
             }
         }
-    }
 }

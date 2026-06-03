@@ -1,5 +1,34 @@
-./*.Action.*/**
-/.vs/./**
-/.vs/**
-/.vs/*.*/**
-*.vs/*.suo
+# Build
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+publish/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Logs locales del orquestador
+**/Logs/
+!**/Logs/.gitkeep
+
+# SQLite de VS (si aplica)
+*.sqlite
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# DLL compiladas en Actions (opcional: descomentar si no versionan plugins)
+# SD.Flow.Orquestator/Actions/*.dll
+# SD.Flow.Orquestator/Actions/*.pdb

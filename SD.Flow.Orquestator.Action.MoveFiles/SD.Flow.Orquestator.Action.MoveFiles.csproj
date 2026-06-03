@@ -4,13 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <BaseOutputPath>C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator\Actions</BaseOutputPath>
   </PropertyGroup>
-	<PropertyGroup>
-		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-		<AppendConfigurationOnlyContextQueries>false</AppendConfigurationOnlyContextQueries>
-		<OutDir>..\SD.Flow.Orquestator\Actions</OutDir>
-	</PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\SD.Flow.Orquestator.Core\SD.Flow.Orquestator.Core.csproj" />
   </ItemGroup>

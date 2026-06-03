@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <!-- Solo plugins Action.* van a SD.Flow.Orquestator/Actions/ -->
+  <PropertyGroup Condition="$(MSBuildProjectName.Contains('.Action.'))">
+    <OutDir>$(MSBuildThisFileDirectory)SD.Flow.Orquestator\Actions\</OutDir>
+  </PropertyGroup>
+</Project>

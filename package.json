@@ -1,0 +1,29 @@
+{
+  "name": "sd-flow-orquestator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scripts npm para compilar y ejecutar SD.Flow.Orquestator (.NET 8)",
+  "scripts": {
+    "restore": "dotnet restore SD.Flow.Orquestator.sln",
+    "clean": "dotnet clean SD.Flow.Orquestator.sln -c Release && dotnet clean SD.Flow.Orquestator.sln -c Debug",
+    "build": "dotnet build SD.Flow.Orquestator.sln -c Release",
+    "build:debug": "dotnet build SD.Flow.Orquestator.sln -c Debug",
+    "build:host": "dotnet build SD.Flow.Orquestator/SD.Flow.Orquestator.csproj -c Release",
+    "build:core": "dotnet build SD.Flow.Orquestator.Core/SD.Flow.Orquestator.Core.csproj -c Release",
+    "build:actions": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-actions.ps1",
+    "build:actions:debug": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/build-actions.ps1 Debug",
+    "start": "dotnet run --project SD.Flow.Orquestator/SD.Flow.Orquestator.csproj -c Release",
+    "start:debug": "dotnet run --project SD.Flow.Orquestator/SD.Flow.Orquestator.csproj -c Debug",
+    "start:build": "npm run build && npm run start",
+    "clean:actions": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/clean-actions-folder.ps1",
+    "publish": "npm run build && npm run clean:actions && dotnet publish SD.Flow.Orquestator/SD.Flow.Orquestator.csproj -c Release -o ./publish",
+    "watch": "dotnet watch run --project SD.Flow.Orquestator/SD.Flow.Orquestator.csproj -c Debug",
+    "whatsapp:install": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/install-whatsapp-deps.ps1",
+    "whatsapp:validate": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/validate-whatsapp.ps1",
+    "whatsapp:test": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/test-whatsapp-dry-run.ps1",
+    "validate:whatsapp": "npm run whatsapp:validate"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

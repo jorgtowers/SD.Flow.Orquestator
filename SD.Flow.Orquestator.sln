@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.DeleteFiles", "SD.Flow.Orquestator.Action.DeleteFiles\SD.Flow.Orquestator.Action.DeleteFiles.csproj", "{206936FA-4F12-4C4B-AE4B-9A9EF604B543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.MoveFille", "SD.Flow.Orquestator.Action.MoveFille\SD.Flow.Orquestator.Action.MoveFille.csproj", "{7BAD2694-693F-4C89-8D22-851F8BAFE2E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.MoveFile", "SD.Flow.Orquestator.Action.MoveFile\SD.Flow.Orquestator.Action.MoveFile.csproj", "{7BAD2694-693F-4C89-8D22-851F8BAFE2E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD.Flow.Orquestator.Action.MoveFiles", "SD.Flow.Orquestator.Action.MoveFiles\SD.Flow.Orquestator.Action.MoveFiles.csproj", "{9F5D7332-8D61-4879-8A42-97F7F5F070AF}"
 EndProject

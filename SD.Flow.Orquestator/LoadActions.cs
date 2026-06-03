@@ -1,27 +1,31 @@
 ﻿using SD.Flow.Orquestator.Core;
 using System.Reflection;
 
-// ... dentro de tu clase de orquestación ...
 public class SDActions
 {
     public List<IWorkflowAction> LoadActions()
     {
-        var actions = new List<IWorkflowAction>();
+        var actionsByName = new Dictionary<string, IWorkflowAction>(StringComparer.OrdinalIgnoreCase);
+        string actionsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Actions");
 
-        // 1. Obtener la ruta donde se ejecuta la aplicación
-        string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Actions");
+        if (!Directory.Exists(actionsPath))
+        {
+            WorkflowLogger.Log($"Carpeta Actions no encontrada en: {actionsPath}. No se cargarán módulos.");
+            return new List<IWorkflowAction>();
+        }
 
-        // 2. Buscar archivos DLL que cumplan con el patrón ".Action."
-        var actionDlls = Directory.GetFiles(path, "*.Action.*.dll", SearchOption.AllDirectories);
+        var actionDlls = Directory.GetFiles(actionsPath, "*.Action.*.dll", SearchOption.TopDirectoryOnly);
+
+        if (actionDlls.Length == 0)
+        {
+            WorkflowLogger.Log($"No se encontraron DLL de acciones (*.Action.*.dll) en: {actionsPath}");
+        }
 
         foreach (var dllPath in actionDlls)
         {
             try
             {
-                // 3. Cargar el ensamblado (Assembly)
                 Assembly assembly = Assembly.LoadFrom(dllPath);
-
-                // 4. Buscar tipos que implementen IWorkflowAction, sean clases y no sean abstractas
                 var actionTypes = assembly.GetTypes().Where(t =>
                     typeof(IWorkflowAction).IsAssignableFrom(t) &&
                     t.IsClass &&
@@ -29,21 +33,26 @@ public class SDActions
 
                 foreach (var type in actionTypes)
                 {
-                    // 5. Instanciar la acción y agregarla a la lista
-                    var instance = Activator.CreateInstance(type) as IWorkflowAction;
-                    if (instance != null)
+                    if (Activator.CreateInstance(type) is not IWorkflowAction instance)
+                        continue;
+
+                    if (actionsByName.ContainsKey(instance.Name))
                     {
-                        actions.Add(instance);
+                        WorkflowLogger.Log(
+                            $"Advertencia: '{instance.Name}' en {Path.GetFileName(dllPath)} está duplicada; se ignora.");
+                        continue;
                     }
+
+                    actionsByName[instance.Name] = instance;
+                    WorkflowLogger.Log($"Acción registrada: {instance.Name} ({Path.GetFileName(dllPath)})");
                 }
             }
             catch (Exception ex)
             {
-                // Es vital capturar errores aquí por si una DLL está corrupta o bloqueada
-                Console.WriteLine($"Error cargando acción desde {dllPath}: {ex.Message}");
+                WorkflowLogger.Log($"Error cargando acción desde {dllPath}: {ex.Message}");
             }
         }
 
-        return actions;
+        return actionsByName.Values.ToList();
     }
 }

@@ -12,3 +12,17 @@ C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Fl
 C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.pdb
 C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\ref\SD.Flow.Orquestator.Action.Shell.dll
 C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.sourcelink.json
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.Shell.deps.json
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.Shell.dll
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.Shell.pdb
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.csproj.AssemblyReference.cache
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.AssemblyInfoInputs.cache
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.AssemblyInfo.cs
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.csproj.CoreCompileInputs.cache
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.sourcelink.json
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow..0632E8B5.Up2Date
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.dll
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\refint\SD.Flow.Orquestator.Action.Shell.dll
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\SD.Flow.Orquestator.Action.Shell.pdb
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.Shell\obj\Debug\ref\SD.Flow.Orquestator.Action.Shell.dll

@@ -1,0 +1,8 @@
+<Project>
+  <!-- Los plugins no deben copiar Core.dll a Actions/; el host ya la carga desde la raíz -->
+  <ItemGroup Condition="$(MSBuildProjectName.Contains('.Action.'))">
+    <ProjectReference Update="@(ProjectReference)">
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

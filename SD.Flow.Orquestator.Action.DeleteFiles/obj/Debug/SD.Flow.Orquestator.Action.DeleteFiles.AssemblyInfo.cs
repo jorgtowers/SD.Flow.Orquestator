@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SD.Flow.Orquestator.Action.DeleteFiles")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3d6b6fc77b0f200b4727478fcd4290bc1535958")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b13869f59cadd59be92c90fb0cd84b5a08876a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("SD.Flow.Orquestator.Action.DeleteFiles")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SD.Flow.Orquestator.Action.DeleteFiles")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

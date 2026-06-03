@@ -1,60 +1,43 @@
 {
-  "Description": "Mover archivos con criterios extendidos de tiempo y exclusión",
+  "Description": "Lote: heredar estructura de carpetas del origen (fol1, fol2\\int1 → mismo árbol en destino)",
   "ActionName": "MoveFiles",
   "Parameters": {
-    "SourceDirectory": "C:/Entrada/Facturas",
-    "SearchPattern": "*.xlsx, *.docx, *.txt",
-    "DestinationDirectory": "C:/Almacen/Procesados_2026",
-    "ExcludedItems": "Seguro Social, backup.txt, Nominas",
+    "SourceDirectory": "C:/Entrada",
+    "DestinationDirectory": "C:/Almacen/Procesados",
+    "SearchPattern": "*.xlsx, *.pdf",
+    "DestinationLayout": "PreserveStructure",
     "Recursive": "true",
-    "DateFilter": "2026-01-01 TO TODAY",
-    "DateProperty": "Modified",
-    "SimulationMode": "false"
-  }
-}
-
-
-{
-  "Description": "SIMULACIÓN: Previsualizar movimiento de archivos del año 2026",
-  "ActionName": "MoveFiles",
-  "Parameters": {
-    "SourceDirectory": "C:/Entrada/Facturas",
-    "SearchPattern": "*.*",
-    "DestinationDirectory": "C:/Almacen/Procesados_2026",
     "ExcludedItems": "backup, temp",
-    "Recursive": "true",
     "DateFilter": "2026-01-01 TO TODAY",
     "DateProperty": "Modified",
+    "Overwrite": "true",
+    "SimulationMode": "false"
+  }
+}
+
+{
+  "Description": "Lote: todo junto en una carpeta (sin subcarpetas, solo nombre de archivo)",
+  "ActionName": "MoveFiles",
+  "Parameters": {
+    "SourceDirectory": "C:/Entrada",
+    "DestinationDirectory": "C:/Almacen/TodoJunto",
+    "SearchPattern": "*.txt, *.docx",
+    "DestinationLayout": "Flat",
+    "Recursive": "true",
+    "Overwrite": "true",
+    "SimulationMode": "false"
+  }
+}
+
+{
+  "Description": "SIMULACIÓN: previsualizar movimiento en modo Flat",
+  "ActionName": "MoveFiles",
+  "Parameters": {
+    "SourceDirectory": "C:/Entrada/Facturas",
+    "DestinationDirectory": "C:/Almacen/TodoJunto",
+    "SearchPattern": "*.*",
+    "DestinationLayout": "Flat",
+    "Recursive": "true",
     "SimulationMode": "true"
-  }
-}
-
-{
-  "Description": "Mover facturas creadas en la primera quincena de enero",
-  "ActionName": "MoveFiles",
-  "Parameters": {
-    "SourceDirectory": "C:/Entrada/Facturas",
-    "SearchPattern": "*.docx, *.pdf",
-    "DestinationDirectory": "C:/Auditoria/Enero_2026",
-    "ExcludedItems": "Borradores, Test",
-    "Recursive": "true",
-    "DateFilter": "2026-01-01 TO 2026-01-15",
-    "DateProperty": "Created",
-    "SimulationMode": "false"
-  }
-}
-
-{
-  "Description": "Archivar documentos antiguos de más de 30 días",
-  "ActionName": "MoveFiles",
-  "Parameters": {
-    "SourceDirectory": "C:/Entrada/Facturas",
-    "SearchPattern": "*.txt, *.xlsx",
-    "DestinationDirectory": "C:/Almacen/Historico_Mensual",
-    "ExcludedItems": "Manuales, Importante.txt",
-    "Recursive": "true",
-    "DateFilter": ">30d",
-    "DateProperty": "Modified",
-    "SimulationMode": "false"
   }
 }

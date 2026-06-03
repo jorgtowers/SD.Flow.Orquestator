@@ -25,7 +25,7 @@ if (!File.Exists(jsonPath))
 // --- 3. Carga y Ejecución del Flujo ---
 try
 {
-    WorkflowLogger.Log($"!============== {DateTime.Now:yyyy-dd-MM-HH:mm} =================!");
+    WorkflowLogger.Log($"!============== {DateTime.Now:yyyy-MM-dd HH:mm} =================!");
     WorkflowLogger.Log("Leyendo configuración del flujo...");
 
     string jsonString = await File.ReadAllTextAsync(jsonPath);

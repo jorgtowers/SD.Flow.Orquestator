@@ -12,3 +12,17 @@ C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Fl
 C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\SD.Flow.Orquestator.Action.MoveFiles.pdb
 C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\ref\SD.Flow.Orquestator.Action.MoveFiles.dll
 C:\Users\Usuario\Desktop\VSCODE\SolutionDeveloper_Projects\FlowOrquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\SD.Flow.Orquestator.Action.MoveFiles.sourcelink.json
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.MoveFiles.deps.json
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.MoveFiles.dll
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Action.MoveFiles.pdb
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\SD.Flow.Orquestator.Action.MoveFiles.csproj.AssemblyReference.cache
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\SD.Flow.Orquestator.Action.MoveFiles.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\SD.Flow.Orquestator.Action.MoveFiles.AssemblyInfoInputs.cache
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\SD.Flow.Orquestator.Action.MoveFiles.AssemblyInfo.cs
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\SD.Flow.Orquestator.Action.MoveFiles.csproj.CoreCompileInputs.cache
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\SD.Flow.Orquestator.Action.MoveFiles.sourcelink.json
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\SD.Flow..7D473586.Up2Date
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\SD.Flow.Orquestator.Action.MoveFiles.dll
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\refint\SD.Flow.Orquestator.Action.MoveFiles.dll
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\SD.Flow.Orquestator.Action.MoveFiles.pdb
+D:\VS\SD.Flow.Orquestator\SD.Flow.Orquestator.Action.MoveFiles\obj\Debug\ref\SD.Flow.Orquestator.Action.MoveFiles.dll

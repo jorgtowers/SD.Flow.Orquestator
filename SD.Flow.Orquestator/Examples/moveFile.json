@@ -1,8 +1,20 @@
 {
-  "Description": "Mover log a carpeta de archivado",
+  "Description": "Mover un solo archivo (ruta completa origen y destino)",
   "ActionName": "MoveFile",
   "Parameters": {
-    "Source": "temp_report.txt",
-    "Destination": "archivados/reporte_finalizado.txt"
+    "Source": "C:/Entrada/documento.pdf",
+    "Destination": "C:/Salida/Archivado/documento.pdf",
+    "Overwrite": "true",
+    "SimulationMode": "false"
+  }
+}
+
+{
+  "Description": "Mover un archivo indicando solo carpeta destino",
+  "ActionName": "MoveFile",
+  "Parameters": {
+    "Source": "C:/Entrada/fol1/reporte.xlsx",
+    "Destination": "C:/Salida/Procesados/",
+    "Overwrite": "true"
   }
 }

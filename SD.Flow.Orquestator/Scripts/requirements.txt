@@ -1,0 +1,3 @@
+# Dependencias para Scripts/send_ws.py (acción WhatsApp)
+pywhatkit>=5.4
+pynput>=1.7

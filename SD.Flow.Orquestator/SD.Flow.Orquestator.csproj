@@ -5,51 +5,49 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RootNamespace>SD.Flow.Orquestator</RootNamespace>
+    <AssemblyName>SD.Flow.Orquestator</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MailKit" Version="4.14.1" />
+    <ProjectReference Include="..\SD.Flow.Orquestator.Core\SD.Flow.Orquestator.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="Input\file.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-	  <None Update="Input\workflow.json">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
+    <None Update="Input\workflow.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
-	<ItemGroup>
-		<None Include="Actions\*.dll">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<Visible>true</Visible>
-		</None>
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Actions\*.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<Visible>true</Visible>
-		</None>
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Scripts\*.py">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<Visible>true</Visible>
-		</None>
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Examples\*.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<Visible>true</Visible>
-		</None>
-	</ItemGroup>
-	<ItemGroup>
-	  <Reference Include="SD.Flow.Orquestator.Core">
-	    <HintPath>..\FlowOrquestator\SD.Flow.Orquestator\Actions\SD.Flow.Orquestator.Core.dll</HintPath>
-	  </Reference>
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Actions\" />
-	</ItemGroup>
+  <!-- Solo DLL de módulos Action.* (no Core ni otros ensamblados) -->
+  <ItemGroup>
+    <None Include="Actions\SD.Flow.Orquestator.Action.*.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>true</Visible>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Actions\SD.Flow.Orquestator.Action.*.deps.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>true</Visible>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\*.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>true</Visible>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Examples\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>true</Visible>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Actions\" />
+  </ItemGroup>
 </Project>
