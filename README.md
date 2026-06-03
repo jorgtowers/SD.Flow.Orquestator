@@ -1,217 +1,275 @@
 # SD.Flow.Orquestator
 
-Motor de workflows para **.NET 8** que ejecuta pasos definidos en JSON. El ejecutable principal descubre y carga **módulos de acción como DLL** desde una carpeta `Actions`; solo las acciones cuyas DLL estén presentes quedan disponibles en tiempo de ejecución.
+Motor de **workflows en .NET 8** definidos por JSON. El ejecutable principal carga **plugins** (`SD.Flow.Orquestator.Action.*.dll`) desde la carpeta `Actions/`. Solo las DLL presentes activan su funcionalidad — modelo pensado para entregar al cliente el host + las acciones contratadas.
+
+> **Retomar el proyecto:** lee esta sección → [Inicio rápido](#inicio-rápido) → [Despliegue](#despliegue-y-carpetas) → [Motor de errores](#comportamiento-del-motor) → la acción que vayas a tocar.
+
+---
+
+## Inicio rápido
+
+```bash
+# Requisitos: .NET 8 SDK, Node.js (solo para scripts npm), Windows
+
+npm run build              # Compila solución completa (host + Core + Actions)
+npm run start              # Ejecuta leyendo SD.Flow.Orquestator/Input/workflow.json
+
+npm run publish            # Build + limpieza + carpeta ./publish lista para copiar al cliente
+```
+
+**Archivo de flujo:** `SD.Flow.Orquestator/Input/workflow.json`  
+**Solución Visual Studio:** `SD.Flow.Orquestator.sln`
+
+---
+
+## Concepto en una frase
+
+| Pieza | Rol |
+|-------|-----|
+| **Host** (`SD.Flow.Orquestator.exe`) | Lee JSON, carga plugins, ejecuta pasos |
+| **Core** (`SD.Flow.Orquestator.Core.dll`) | Motor, interfaz `IWorkflowAction`, logs, rutas dinámicas |
+| **Actions/** | DLLs opcionales `*.Action.*.dll` (Copy, Move, Email, Shell, WhatsApp, …) |
+
+El `ActionName` del JSON debe coincidir con `IWorkflowAction.Name` de la DLL cargada.
+
+---
 
 ## Arquitectura
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  SD.Flow.Orquestator (Exe)                                  │
-│  • Lee Input/workflow.json                                  │
-│  • LoadActions → escanea Actions/*.Action.*.dll             │
-│  • WorkflowEngine ejecuta pasos secuenciales                  │
-└──────────────────────────┬──────────────────────────────────┘
-                           │ referencia
-                           ▼
-┌─────────────────────────────────────────────────────────────┐
-│  SD.Flow.Orquestator.Core (biblioteca compartida)            │
-│  IWorkflowAction, WorkflowEngine, PathHelper, WorkflowLogger  │
-└──────────────────────────┬──────────────────────────────────┘
-                           │ implementan
-                           ▼
-┌─────────────────────────────────────────────────────────────┐
-│  SD.Flow.Orquestator.Action.* (DLLs en carpeta Actions/)    │
-│  CopyFile, CopyFiles, MoveFile, MoveFiles, DeleteFiles,     │
-│  ZipFiles, SendEmail, ExecuteShell, WhatsApp, …             │
-└─────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────┐
+│  SD.Flow.Orquestator (Exe)                               │
+│  Program.cs → LoadActions() → WorkflowEngine             │
+│  Input/workflow.json                                     │
+└─────────────────────────┬────────────────────────────────┘
+                          │ ProjectReference
+                          ▼
+┌──────────────────────────────────────────────────────────┐
+│  SD.Flow.Orquestator.Core                                │
+│  IWorkflowAction, WorkflowEngine, PathHelper, Logger     │
+└─────────────────────────┬────────────────────────────────┘
+                          │ implementan (plugins)
+                          ▼
+┌──────────────────────────────────────────────────────────┐
+│  Actions/SD.Flow.Orquestator.Action.*.dll                │
+└──────────────────────────────────────────────────────────┘
 ```
 
-### Flujo de ejecución
+### Flujo al ejecutar
 
-1. Al iniciar, `SDActions.LoadActions()` busca en `{BaseDirectory}/Actions` archivos que coincidan con el patrón `*.Action.*.dll`.
-2. Por cada DLL, carga el ensamblado con `Assembly.LoadFrom` e instancia clases concretas que implementen `IWorkflowAction`.
-3. Las acciones se registran en un diccionario por `Name` (debe coincidir con `ActionName` en el JSON).
-4. Se deserializa `Input/workflow.json` en `WorkflowDefinition` y `WorkflowEngine` ejecuta cada paso en orden; ante un error en un paso, el workflow se aborta.
+1. `LoadActions()` escanea `Actions/*.Action.*.dll` e instancia clases que implementan `IWorkflowAction`.
+2. Se deserializa `Input/workflow.json` → `WorkflowDefinition`.
+3. `WorkflowEngine` recorre cada paso en orden y aplica las reglas de [errores](#comportamiento-del-motor).
 
-## Estructura de la solución
+---
 
-| Proyecto | Tipo | Descripción |
-|----------|------|-------------|
-| **SD.Flow.Orquestator** | `Exe` | Host principal, carga de DLLs y punto de entrada |
-| **SD.Flow.Orquestator.Core** | `Class Library` | Contratos, motor, utilidades (`PathHelper`, logging) |
-| **SD.Flow.Orquestator.Action.CopyFile** | `DLL` | Copia un archivo (`CopyFile`) |
-| **SD.Flow.Orquestator.Action.CopyFiles** | `DLL` | Copia archivos por patrón (`CopyFiles`) |
-| **SD.Flow.Orquestator.Action.MoveFile** | `DLL` | Mueve un archivo (`MoveFile`) |
-| **SD.Flow.Orquestator.Action.MoveFiles** | `DLL` | Mueve archivos con filtros de fecha y simulación (`MoveFiles`) |
-| **SD.Flow.Orquestator.Action.DeleteFiles** | `DLL` | Elimina archivos o por patrón (`DeleteFiles`) |
-| **SD.Flow.Orquestator.Action.ZipFiles** | `DLL` | Comprime archivos en ZIP (`ZipFiles`) |
-| **SD.Flow.Orquestator.Action.SendEmail** | `DLL` | Envío SMTP vía MailKit (`SendEmail`) |
-| **SD.Flow.Orquestator.Action.Shell** | `DLL` | Ejecuta CMD o PowerShell (`ExecuteShell`) |
-| **SD.Flow.Orquestator.Action.WhatsApp** | `DLL` | Lanza script Python para WhatsApp Web (`WhatsApp`) |
+## Proyectos de la solución
 
-Abrir la solución: `SD.Flow.Orquestator.sln`
+| Proyecto | Salida | `ActionName` |
+|----------|--------|--------------|
+| `SD.Flow.Orquestator` | Exe (raíz) | — |
+| `SD.Flow.Orquestator.Core` | `Core/bin/Release/*.dll` → copiada junto al exe | — |
+| `Action.CopyFile` | `Actions/*.dll` | `CopyFile` |
+| `Action.CopyFiles` | `Actions/*.dll` | `CopyFiles` |
+| `Action.MoveFile` | `Actions/*.dll` | `MoveFile` (un archivo) |
+| `Action.MoveFiles` | `Actions/*.dll` | `MoveFiles` (lote + comodines) |
+| `Action.DeleteFiles` | `Actions/*.dll` | `DeleteFiles` |
+| `Action.ZipFiles` | `Actions/*.dll` | `ZipFiles` |
+| `Action.SendEmail` | `Actions/*.dll` | `SendEmail` |
+| `Action.Shell` | `Actions/*.dll` | `ExecuteShell` |
+| `Action.WhatsApp` | `Actions/*.dll` | `WhatsApp` (+ Python) |
 
-## Requisitos
+---
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- Windows (acciones de archivos y shell orientadas a rutas Windows)
-- Para **WhatsApp**: Python 3, dependencias en `Scripts/requirements.txt`, y el script `Scripts/send_ws.py` copiado junto al ejecutable
+## Build del repositorio
 
-## Compilación y despliegue
+### Archivos MSBuild importantes
+
+| Archivo | Qué hace |
+|---------|----------|
+| `Directory.Build.props` | Los proyectos `Action.*` compilan directo a `SD.Flow.Orquestator/Actions/` |
+| `Directory.Build.targets` | Los `Action.*` **no copian** `Core.dll` a `Actions/` (`Private=false` en referencias) |
+| Host `.csproj` | Solo copia al output/publish: `Actions/SD.Flow.Orquestator.Action.*.dll` |
+
+**Core** compila en `SD.Flow.Orquestator.Core/bin/Release/` y el host la lleva a la **raíz** del ejecutable vía `ProjectReference`.
 
 ### Scripts npm (`package.json`)
 
-Requiere [Node.js](https://nodejs.org/) instalado (solo para invocar los scripts; el proyecto sigue siendo .NET).
+Requiere [Node.js](https://nodejs.org/) para invocar scripts; la app es .NET.
 
-| Comando | Descripción |
-|---------|-------------|
-| `npm run restore` | Restaura paquetes NuGet de la solución |
+| Comando | Uso |
+|---------|-----|
 | `npm run build` | Compila toda la solución (Release) |
 | `npm run build:debug` | Compila en Debug |
-| `npm run build:host` | Compila solo el ejecutable principal |
-| `npm run build:core` | Compila solo la biblioteca Core |
-| `npm run build:actions` | Compila todos los módulos Action.* (vía `scripts/build-actions.ps1`) |
-| `npm run build:actions:debug` | Igual que anterior en Debug |
-| `npm run start` | Ejecuta el orquestador (Release) |
-| `npm run start:debug` | Ejecuta en Debug |
-| `npm run start:build` | Compila y luego ejecuta |
-| `npm run watch` | Ejecuta con recarga al cambiar código (Debug) |
-| `npm run publish` | Compila la solución, limpia `Actions/` y publica en `./publish` |
-| `npm run clean:actions` | Elimina `Core.dll` y restos obsoletos de la carpeta `Actions/` |
-| `npm run clean` | Limpia artefactos de compilación |
-| `npm run whatsapp:install` | Instala `pywhatkit` y `pynput` vía pip |
-| `npm run whatsapp:validate` | Verifica Python, dependencias y archivos (sin enviar mensajes) |
-| `npm run whatsapp:test` | Prueba `send_ws.py` en modo `--dry-run` (sin navegador) |
-| `npm run validate:whatsapp` | Alias de `whatsapp:validate` |
+| `npm run build:actions` | Solo módulos `Action.*` |
+| `npm run start` | Ejecuta el orquestador |
+| `npm run start:build` | Build + start |
+| `npm run publish` | **Build + clean:actions + publish → `./publish`** |
+| `npm run clean:actions` | Quita `Core.dll` / restos viejos de `Actions/` |
+| `npm run clean` | `dotnet clean` de la solución |
+| `npm run whatsapp:install` | `pip install -r Scripts/requirements.txt` |
+| `npm run whatsapp:validate` | Valida Python y archivos (sin enviar) |
+| `npm run whatsapp:test` | Dry-run del script Python |
 
-```bash
-npm run build
-npm run whatsapp:install
-npm run whatsapp:validate
-npm run start
-```
+Scripts PowerShell en `scripts/`: `build-actions.ps1`, `clean-actions-folder.ps1`, `install-whatsapp-deps.ps1`, `validate-whatsapp.ps1`, `test-whatsapp-dry-run.ps1`.
 
-### Compilar todo (dotnet directo)
+---
 
-```bash
-dotnet build SD.Flow.Orquestator.sln -c Release
-```
+## Despliegue y carpetas
 
-Los proyectos `Action.*` y `Core` usan `Directory.Build.props` para compilar directamente en `SD.Flow.Orquestator/Actions/`.
-
-### Estructura de carpetas en runtime
-
-Junto al ejecutable (`SD.Flow.Orquestator.exe`):
+### Layout correcto (runtime / `publish/`)
 
 ```
 SD.Flow.Orquestator/
 ├── SD.Flow.Orquestator.exe
-├── SD.Flow.Orquestator.Core.dll          ← OBLIGATORIO aquí (raíz, junto al .exe)
+├── SD.Flow.Orquestator.Core.dll     ← SOLO en raíz (obligatoria)
 ├── Input/
-│   └── workflow.json                     (definición del flujo — obligatorio)
+│   └── workflow.json                ← flujo a ejecutar
 ├── Actions/
-│   ├── SD.Flow.Orquestator.Action.CopyFiles.dll   ← solo plugins *.Action.*.dll
-│   ├── SD.Flow.Orquestator.Action.SendEmail.dll
-│   └── …                                 (solo las que el cliente necesite)
-```
-
-**`SD.Flow.Orquestator.Core.dll` no debe estar en `Actions/`.**  
-- **Raíz:** Core es la biblioteca del motor; el host la carga al iniciar.  
-- **`Actions/`:** solo módulos `SD.Flow.Orquestator.Action.*.dll`. El cargador ignora otros nombres, pero duplicar Core ahí confunde y puede dejar versiones desactualizadas.
-
-Si tras compilar antigua configuración quedó `Actions/Core.dll`, ejecute: `npm run clean:actions`
-
-`npm run publish` ejecuta `build` + limpieza + `dotnet publish` en `./publish` con la misma regla.
+│   ├── SD.Flow.Orquestator.Action.CopyFiles.dll
+│   ├── SD.Flow.Orquestator.Action.MoveFiles.dll
+│   └── …                            ← solo *.Action.*.dll (plugins)
 ├── Scripts/
-│   └── send_ws.py                        (requerido si se usa WhatsApp)
-├── Examples/                             (ejemplos de pasos sueltos)
+│   └── send_ws.py                   ← si se usa WhatsApp
+├── Examples/                        ← fragmentos JSON de referencia
 └── Logs/
     └── Log_yyyy-MM-dd.txt
 ```
 
-**Modelo de licenciamiento / funcionalidad:** el cliente recibe el ejecutable base y copia en `Actions/` únicamente las DLL de las acciones contratadas. Si `workflow.json` referencia una acción sin DLL cargada, ese paso no se ejecutará (el motor no encuentra la acción registrada).
+### Regla de oro: Core.dll
 
-## Configuración del workflow (`Input/workflow.json`)
+| Ubicación | ¿Core.dll? |
+|-----------|------------|
+| **Raíz** (junto al `.exe`) | **Sí** — el host la carga al arrancar |
+| **`Actions/`** | **No** — solo plugins `SD.Flow.Orquestator.Action.*.dll` |
 
-Formato principal:
+Si ves `Actions/SD.Flow.Orquestator.Core.dll` es un residuo de builds antiguos → `npm run clean:actions`.
+
+`npm run publish` deja `./publish` con esa estructura (compila todo, limpia `Actions/`, publica el host y copia solo DLL de acciones).
+
+### Modelo comercial / modular
+
+El cliente recibe el **exe + Core + carpetas base** y solo las DLL de acciones que contrate en `Actions/`. Si el JSON pide una acción sin DLL, el paso se omite (ver motor).
+
+---
+
+## Workflow (`Input/workflow.json`)
 
 ```json
 {
-  "WorkflowName": "Nombre descriptivo del flujo",
+  "WorkflowName": "Mi proceso",
   "Steps": [
     {
-      "Description": "Texto para logs",
-      "ActionName": "CopyFiles",
+      "Description": "Paso legible en logs",
+      "ActionName": "MoveFiles",
       "Parameters": {
-        "SourceDirectory": "C:/origen",
-        "DestinationDirectory": "C:/destino",
-        "SearchPattern": "*.*",
-        "Overwrite": "true"
+        "SourceDirectory": "C:/Entrada",
+        "DestinationDirectory": "C:/Salida",
+        "SearchPattern": "*.pdf",
+        "DestinationLayout": "PreserveStructure"
       }
     }
   ]
 }
 ```
 
-`ActionName` debe coincidir exactamente con la propiedad `Name` de la acción implementada.
-
-### Acciones disponibles y parámetros principales
-
-| ActionName | Parámetros clave |
-|------------|-------------------|
-| `CopyFile` | `Source`, `Destination` |
-| `CopyFiles` | `SourceDirectory`, `DestinationDirectory`, `SearchPattern`, `Overwrite` |
-| `MoveFile` | `Source`, `Destination`, `Overwrite`, `SimulationMode` |
-| `MoveFiles` | `SourceDirectory`, `DestinationDirectory`, `SearchPattern`, `DestinationLayout`, `Recursive`, `ExcludedItems`, `DateFilter`, `DateProperty`, `Overwrite`, `SimulationMode` |
-| `DeleteFiles` | `Path`, `SearchPattern`, `Recursive` |
-| `ZipFiles` | `SourceDirectory`, `ZipFilePath`, `SearchPattern`, `OverwriteZip` |
-| `SendEmail` | `To`, `Subject`, `Body`, `SmtpServer`, `SmtpPort`, `SmtpUser`, `SmtpPass`, `AttachmentPath` |
-| `ExecuteShell` | `Command`, `ShellType` (`CMD` / `POWERSHELL`), `WorkingDirectory`, `Wait` |
-| `WhatsApp` | `Phone`, `Message`, `DryRun` (opcional), `TimeoutSeconds` (opcional, default 180) |
+- `ActionName` = `Name` de la acción en código.
+- Parámetros = `Dictionary<string,string>` (todos string en JSON).
+- Ejemplos sueltos por acción: `SD.Flow.Orquestator/Examples/*.json` (integrar dentro de `Steps`).
 
 ### Rutas dinámicas (`PathHelper`)
 
-En rutas de parámetros se pueden usar placeholders reemplazados por la fecha actual:
+En rutas: `YYYY`, `MM`, `DD` → fecha actual. Ejemplo: `C:/Backup/YYYY/MM/DD`.
 
-- `YYYY` → año (ej. `2026`)
-- `MM` → mes
-- `DD` → día
+---
 
-Ejemplo: `C:/Backup/YYYY/MM/DD`
+## Acciones — referencia rápida
 
-### `MoveFile` vs `MoveFiles`
+| ActionName | Para qué | Parámetros principales |
+|------------|----------|------------------------|
+| `CopyFile` | Un archivo | `Source`, `Destination`, `Overwrite`, `SimulationMode` |
+| `CopyFiles` | Varios por patrón | `SourceDirectory`, `DestinationDirectory`, `SearchPattern`, `Overwrite` |
+| `MoveFile` | **Un** archivo | `Source`, `Destination` (si destino es carpeta, conserva nombre), `Overwrite`, `SimulationMode` |
+| `MoveFiles` | **Lote** `*.ext` | Ver [MoveFiles](#movefile-y-movefiles) |
+| `DeleteFiles` | Borrar | `Path`, `SearchPattern`, `Recursive` |
+| `ZipFiles` | ZIP | `SourceDirectory`, `ZipFilePath`, `SearchPattern`, `OverwriteZip` |
+| `SendEmail` | SMTP (MailKit) | `To`, `Subject`, `Body`, `SmtpServer`, `SmtpPort`, `SmtpUser`, `SmtpPass`, `AttachmentPath` |
+| `ExecuteShell` | CMD / PowerShell | `Command`, `ShellType`, `WorkingDirectory`, `Wait` |
+| `WhatsApp` | WhatsApp Web vía Python | `Phone`, `Message`, `DryRun`, `TimeoutSeconds` — ver [WhatsApp](#whatsapp) |
 
-| Acción | Uso |
-|--------|-----|
-| **MoveFile** | Un solo archivo (`Source` → `Destination`). Si `Destination` es carpeta, conserva el nombre del archivo. |
-| **MoveFiles** | Lote con comodines (`*.pdf`, `*.xlsx`, …), filtros de fecha y exclusiones. |
+Cada acción puede declarar `RequiredParameterKeys`; si faltan en el JSON, el paso se omite sin detener el flujo.
 
-### Modo de destino en `MoveFiles` (`DestinationLayout`)
+---
 
-| Valor | Comportamiento | Ejemplo |
-|-------|----------------|---------|
-| `PreserveStructure` (por defecto) | Replica el árbol de carpetas del origen bajo el destino. | Origen: `C:/In/fol1/a.pdf`, `C:/In/fol2/int1/b.pdf` → Destino: `C:/Out/fol1/a.pdf`, `C:/Out/fol2/int1/b.pdf` |
-| `Flat` | Todos los archivos en la carpeta destino, sin subcarpetas (solo nombre de archivo). | Los mismos archivos → `C:/Out/a.pdf`, `C:/Out/b.pdf` |
+## MoveFile y MoveFiles
 
-Alias aceptados: `PreserveFolderStructure` (`true`/`false`), `DestinoOrigen` (= PreserveStructure), `DestinoNuevo` (= Flat).
+| Acción | Cuándo usarla |
+|--------|----------------|
+| **MoveFile** | Un archivo concreto: `Source` → `Destination` |
+| **MoveFiles** | Muchos archivos: `SearchPattern` (`*.pdf`, `*.xlsx`, …), filtros, exclusiones |
 
-```json
-"DestinationLayout": "PreserveStructure"
+### `DestinationLayout` (solo MoveFiles)
+
+| Valor | Efecto |
+|-------|--------|
+| `PreserveStructure` (**default**) | Hereda carpetas: `origen/fol1/a.pdf` → `destino/fol1/a.pdf` |
+| `Flat` | Todo en una carpeta: `destino/a.pdf`, `destino/b.pdf` (sin subcarpetas) |
+
+Alias: `PreserveFolderStructure` (`true`/`false`), `DestinoOrigen`, `DestinoNuevo`.
+
+Otros parámetros útiles: `Recursive`, `ExcludedItems`, `DateFilter` (`2026-01-01 TO TODAY`, `>30d`), `DateProperty` (`Modified`/`Created`), `SimulationMode`, `Overwrite`.
+
+---
+
+## Comportamiento del motor
+
+| Situación | Qué pasa |
+|-----------|----------|
+| DLL / acción no encontrada | Paso **omitido** + log; el flujo **sigue** |
+| Parámetros obligatorios faltantes | Paso **omitido** + log; el flujo **sigue** |
+| Excepción en un paso | Paso **falla**; pasos siguientes **omitidos** con mensaje “error en paso X” |
+| DLL duplicada al cargar | Se usa la primera; advertencia en log |
+
+Logs: consola + `Logs/Log_yyyy-MM-dd.txt` (`WorkflowLogger`).
+
+---
+
+## WhatsApp
+
+Depende de **Python 3** + `pywhatkit` + `pynput` (no es API oficial de Meta).
+
+```bash
+npm run whatsapp:install    # pip install -r SD.Flow.Orquestator/Scripts/requirements.txt
+npm run whatsapp:validate   # comprueba entorno
+npm run whatsapp:test       # dry-run (no abre navegador)
 ```
 
+En JSON:
+
 ```json
-"DestinationLayout": "Flat"
+{
+  "ActionName": "WhatsApp",
+  "Parameters": {
+    "Phone": "+58XXXXXXXXXX",
+    "Message": "Texto",
+    "DryRun": "false",
+    "TimeoutSeconds": "180"
+  }
+}
 ```
 
-### Filtros de fecha en `MoveFiles`
+- **`DryRun: true`** — simula sin enviar.
+- La acción C# **espera** al proceso Python, captura stdout/stderr y falla si exit code ≠ 0.
+- Envío real: sesión activa en [web.whatsapp.com](https://web.whatsapp.com), escritorio con navegador visible.
 
-- Rango: `"2026-01-01 TO TODAY"` o `"2026-01-01 TO 2026-01-15"`
-- Relativo: `">30d"` (archivos con antigüedad mayor a 30 días en `Modified`/`Created`)
+Códigos de salida del script: `0` ok, `1` error, `2` dependencia faltante.
 
-## Crear un nuevo módulo de acción
+---
 
-1. Crear proyecto de biblioteca .NET 8, por ejemplo `SD.Flow.Orquestator.Action.MiAccion`.
-2. Referenciar `SD.Flow.Orquestator.Core`.
+## Crear un nuevo módulo Action
+
+1. Proyecto biblioteca .NET 8: `SD.Flow.Orquestator.Action.MiAccion`.
+2. `ProjectReference` a `SD.Flow.Orquestator.Core` (hereda `Directory.Build.*` → salida en `Actions/`).
 3. Implementar `IWorkflowAction`:
 
 ```csharp
@@ -221,89 +279,64 @@ public class MiAccionAction : IWorkflowAction
 {
     public string Name => "MiAccion";
 
+    public IReadOnlyCollection<string> RequiredParameterKeys =>
+        new[] { "ParametroObligatorio" };
+
     public async Task ExecuteAsync(Dictionary<string, string> args)
     {
-        // leer args["Parametro"]
+        // ...
         await Task.CompletedTask;
     }
 }
 ```
 
-4. Configurar salida hacia `SD.Flow.Orquestator/Actions` (como el resto de proyectos `Action.*`).
-5. El nombre del ensamblado debe contener `.Action.` para que el cargador lo detecte (ej. `SD.Flow.Orquestator.Action.MiAccion.dll`).
-6. Copiar la DLL (y dependencias NuGet si las hay) a la carpeta `Actions` del despliegue.
+4. El ensamblado **debe** llamarse `SD.Flow.Orquestator.Action.MiAccion.dll` (patrón `*.Action.*.dll`).
+5. Agregar el proyecto a `SD.Flow.Orquestator.sln` y compilar con `npm run build`.
 
-## Ejemplos
+---
 
-En `SD.Flow.Orquestator/Examples/` hay fragmentos JSON por acción (`copyFiles.json`, `moveFiles.json`, `sendEmail.json`, etc.). Son **pasos individuales** de referencia; para ejecutar un flujo completo, integrarlos dentro de `Steps` en `workflow.json`.
+## Mapa del repositorio
 
-## Comportamiento del motor ante errores
-
-| Situación | Comportamiento |
-|-----------|----------------|
-| DLL / acción no encontrada | El paso se **omite** con log; el flujo **continúa**. |
-| Parámetros obligatorios faltantes | El paso se **omite** con log; el flujo **continúa**. |
-| Excepción durante un paso | Ese paso **falla**; los pasos siguientes se **omiten** con mensaje indicando el paso que falló. |
-| Acción duplicada al cargar DLLs | Se conserva la primera; las demás se ignoran con advertencia. |
-
-Parámetros obligatorios se declaran en cada acción mediante `RequiredParameterKeys` en `IWorkflowAction`.
-
-## Logs
-
-`WorkflowLogger` escribe en consola y en `Logs/Log_{fecha}.txt`.
-
-## Acción WhatsApp
-
-### Configuración inicial
-
-```bash
-npm run whatsapp:install
-npm run whatsapp:validate
-npm run whatsapp:test
+```
+SD.Flow.Orquestator/
+├── SD.Flow.Orquestator.sln
+├── package.json                 # scripts npm
+├── Directory.Build.props        # OutDir Actions/ para plugins
+├── Directory.Build.targets      # no copiar Core a Actions/
+├── README.md
+├── scripts/                     # PowerShell auxiliares
+├── publish/                     # salida de npm run publish
+├── SD.Flow.Orquestator/         # host + Input + Actions + Scripts + Examples
+├── SD.Flow.Orquestator.Core/
+└── SD.Flow.Orquestator.Action.*/
 ```
 
-### Parámetros en `workflow.json`
+---
 
-```json
-{
-  "Description": "Aviso por WhatsApp",
-  "ActionName": "WhatsApp",
-  "Parameters": {
-    "Phone": "+584121234567",
-    "Message": "Proceso finalizado correctamente.",
-    "DryRun": "false",
-    "TimeoutSeconds": "180"
-  }
-}
-```
+## Problemas frecuentes
 
-- **`DryRun`**: `"true"` simula el envío sin abrir el navegador (útil para pruebas).
-- **`TimeoutSeconds`**: tiempo máximo de espera al script Python (por defecto 180 s).
+| Síntoma | Causa probable | Qué hacer |
+|---------|----------------|-----------|
+| Acción no se ejecuta | Falta DLL en `Actions/` o `ActionName` distinto al `Name` | Revisar log al iniciar (“Acción registrada…”) |
+| `Core.dll` en `Actions/` | Build viejo | `npm run clean:actions` |
+| Publish sin todas las acciones | Solo se publicó el host | `npm run publish` (incluye build completo) |
+| WhatsApp “lanzado” pero no envía | Python sin deps o sin sesión web | `whatsapp:install`, `whatsapp:validate`, login en WhatsApp Web |
+| MoveFiles no respeta carpetas | `DestinationLayout` = `Flat` | Usar `PreserveStructure` |
+| Paso omitido por parámetros | Falta clave en `RequiredParameterKeys` | Completar `Parameters` en JSON |
 
-### Captura de errores
+---
 
-La acción C# ahora:
+## Requisitos
 
-1. Espera a que termine el proceso Python.
-2. Registra **stdout** y **stderr** en los logs.
-3. Lanza excepción si el código de salida es distinto de cero (el motor marcará el paso como fallido).
-4. Detecta timeout si el script tarda más de lo configurado.
+- .NET 8 SDK  
+- Windows (rutas, CMD, PowerShell)  
+- Node.js 18+ (opcional, para scripts npm)  
+- Python 3 + pip (solo acción WhatsApp)
 
-El script `send_ws.py` escribe errores en stderr y devuelve códigos de salida:
+---
 
-| Código | Significado |
-|--------|-------------|
-| `0` | Éxito |
-| `1` | Error general o argumentos inválidos |
-| `2` | Dependencia Python faltante (`pywhatkit`, `pynput`, etc.) |
+## Notas técnicas
 
-### Requisitos de ejecución real
-
-- Sesión activa en [web.whatsapp.com](https://web.whatsapp.com) en el navegador predeterminado.
-- Escritorio interactivo (no apto para servicios Windows sin UI).
-
-## Notas de desarrollo
-
-- El host referencia `SD.Flow.Orquestator.Core` vía `ProjectReference` o DLL; los módulos deben compilarse contra la **misma versión** de Core que despliega el cliente.
-- `MailKit` solo es necesario en el proyecto `Action.SendEmail`, no en el host (aunque el `.csproj` del host actualmente incluye el paquete sin uso directo).
-- WhatsApp depende de automatización del navegador (`pywhatkit`); no es una API oficial de Meta. Use `DryRun: true` o `npm run whatsapp:test` para validar sin enviar mensajes.
+- **SendEmail** usa MailKit solo en su proyecto Action; credenciales SMTP pueden ir en JSON (`SmtpUser`, `SmtpPass`) o valores por defecto en código.
+- **ExecuteShell** detecta `.ps1` / `.bat` vs comando inline; usa `ArgumentList` y captura salida si `Wait=true`.
+- Los plugins resuelven **Core** desde el AppDomain del host (ya cargado en raíz); no necesitan `Core.dll` física en `Actions/`.
